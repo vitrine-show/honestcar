@@ -49,10 +49,14 @@
 </head>
 <body class="bg-slate-950 text-white min-h-screen flex flex-col items-center overflow-x-hidden selection:bg-cyan-500 selection:text-black">
 
-    <!-- Fundo Futurista -->
+    <!-- Fundo Personalizado (image.png) -->
     <div class="fixed inset-0 z-0 pointer-events-none">
-        <div class="absolute inset-0 bg-gradient-to-b from-cyan-900/20 to-slate-950 h-full w-full"></div>
-        <div class="absolute top-[-10%] left-0 right-0 h-[500px] bg-cyan-500/10 blur-[120px] rounded-full"></div>
+        <!-- Imagem de fundo (certifique-se de ter image.png na pasta) -->
+        <img src="image.png" alt="Fundo" class="w-full h-full object-cover opacity-100">
+        <!-- Camada escura para garantir leitura do texto -->
+        <div class="absolute inset-0 bg-black/70"></div>
+        <!-- Efeito de luz sutil no topo -->
+        <div class="absolute top-0 left-0 right-0 h-[300px] bg-gradient-to-b from-cyan-900/30 to-transparent"></div>
     </div>
 
     <!-- Conteúdo Principal -->
